@@ -1,16 +1,76 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: crosshair;
+}
+
 body {
-    font-family: Arial, sans-serif;
     background-color: #000;
-    color: white;
+    color: #d1d1d1;
+    font-family: 'Share Tech Mono', monospace;
+    line-height: 1.8;
+    overflow-x: hidden;
+    padding: 0 5vw;
+}
+
+header {
+    padding: 20px 0;
     text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-header img {
-    max-width: 200px;
-    margin-top: 20px;
+#logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 2em;
-    margin-top: 10px;
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(191, 0, 255);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+    opacity: 0.6;
 }
